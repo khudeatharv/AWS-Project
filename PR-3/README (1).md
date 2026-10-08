@@ -22,7 +22,7 @@ An Amazon RDS MySQL database instance was created and configured successfully.
 
 The restored database instance is shown below. The database status is **Available**, the engine is **MySQL Community**, and the instance class is **db.t3.micro**.
 
-![RDS MySQL restored database details](screenshots/01-restored-db-details.png)
+![RDS MySQL restored database details](screenshots/manual-snapshot-details.png)
 
 ---
 
@@ -32,7 +32,7 @@ Automated backups were enabled while configuring the RDS MySQL database.
 
 The RDS snapshot details below also show a **Backup retention period of 1 day**, confirming the backup configuration used for this practical.
 
-![RDS snapshot and backup configuration details](screenshots/03-manual-snapshot-details.png)
+![RDS snapshot and backup configuration details](screenshots/manual-snapshot-details.png)
 
 ---
 
@@ -54,7 +54,7 @@ The MySQL query used to verify the original records was:
 SELECT * FROM students;
 ```
 
-![Original sample data](screenshots/06-original-sample-data.png)
+![Original sample data](screenshots/Main-DB.png)
 
 ---
 
@@ -72,7 +72,7 @@ The snapshot details show:
 - Status: **Available**
 - Storage: **20 GiB**
 
-![Manual DB snapshot details](screenshots/03-manual-snapshot-details.png)
+![Manual DB snapshot details](screenshots/RDS-Snapshot-Recovery.png)
 
 ---
 
@@ -95,7 +95,7 @@ returned only two records:
 
 This confirms that the **Amit / DevOps** record was missing after the simulated data loss.
 
-![Data loss simulated](screenshots/05-data-loss-simulated.png)
+![Data loss simulated](screenshots/DB-Creation.png)
 
 ---
 
@@ -109,7 +109,7 @@ The AWS console displayed the message:
 
 The restored database instance was created as **my-rds-mysql-restored2** and its status is **Available**.
 
-![Snapshot restored successfully](screenshots/02-snapshot-restore-success.png)
+![Snapshot restored successfully](screenshots/Restore-DB.png)
 
 ---
 
@@ -131,7 +131,7 @@ The result again contained all three original records:
 
 The deleted **Amit / DevOps** record was successfully recovered from the snapshot.
 
-![Recovered records after restore](screenshots/04-data-after-recovery.png)
+![Recovered records after restore](screenshots/Restored-db.png)
 
 ---
 
